@@ -10,5 +10,4 @@ It can parse simple natural language statements that involve time, such as
 
 And draw a timeline chart, using HTML.
 
-See http://crowfly.net/timeline
-
+See http://crowfly.net/timeline/timeline.cgi
