@@ -1,0 +1,21 @@
+BODY {
+    background-color: lightgrey;
+}
+
+.pageHeader {
+    color:         red;
+    font-size:     1.4em;
+}
+
+.menu {
+    background-color: lightgreen;
+}
+
+.picture {
+    background-color: lightyellow;
+}
+
+.filename {
+    color: green;
+    font-style: italic;
+}

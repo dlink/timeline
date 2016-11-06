@@ -1,0 +1,9 @@
+export t=$HOME/timeline ; alias t="cd $t"
+export tb=$t/bin        ; alias tb="cd $tb"
+export td=$t/data       ; alias td="cd $td"
+export tl=$t/lib        ; alias tl="cd $tl"
+export tn=$t/notes      ; alias tn="cd $tn"
+export tw=$t/web        ; alias tw="cd $tw"
+export twc=$t/web/css   ; alias twc="cd $twc"
+export twj=$t/web/js    ; alias twj="cd $twj"
+

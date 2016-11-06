@@ -1,0 +1,80 @@
+State of the Project
+2/7/2006
+
+Most of the work was done in July 2005.  
+
+
+Super Class: 
+
+      Terms.pm     Everything is a Term.
+
+Mortal Classes:
+
+       Events.pm    Has an Entity (name), an Action, and a Time.
+       Entity.pm    Things
+       Action.pm    Actions
+
+Data Loader Classes:
+
+     Data.pm			Incarnations of basic data
+     Data2.pm			Incarnations of basic data
+     Data_GreatPeople.pm	Contains data on Historical figures.
+     Data4.pm			Plays with reading natural language files.
+     family.dat			  Basic data read by Data4.pm
+
+* TalkAbout can say frank things about the Data, and make some comparisons.
+
+* Timeline can draw a rudamentary timeline using ascii char on a 80
+  character terminal screen.
+
+
+Class Diagram:
+
+  .---------------------.
+  |   Term              |
+  |=====================|
+  |   type              |
+  |---------------------|
+  |   load_data         |
+  |   getTerms          |<|----------.
+  |   dumpAll           |             \
+  |---------------------|<|---------.  \
+  |   new               |           |   \
+  |   get               |<|------.  |    \
+  |   dump              |       /   |     \
+  |   tellAbout         |      /    |      \
+  |                     |     /     |       \
+  '---------------------'    /      |        \
+                            /       |         \
+                                  
+
+  .-----------------------.        .-----------------------.
+  |   Event               |        |   Entity              |
+  |=======================|        |=======================|
+  |   name (Entity name)  |        |   name                |
+  |   action              |<>------|   category            |
+  |   time                |<>--.   |-----------------------|
+  |-----------------------|    |   |                       |
+  |                       |    |   |   getEntities         |
+  |   getEvents           |    |   |   getEntity           |
+  |   dumpAll             |    |   |   dumpAll             |
+  |-----------------------|    |   |-----------------------|
+  |   init                |    |   |   init                |
+  |   tellAbout           |    |   |                       |
+  |                       |    |   '-----------------------'
+  '-----------------------'    |   
+                               |   .-----------------------.
+                               |   |   Action              |
+                               |   |=======================|
+                               |   |   name                |
+                                \  |   qualifier           |
+                                 \ |-----------------------|
+                                  \|                       |
+                                   |   getActions          |
+                                   |   getAction           |
+                                   |   dumpAll             |
+                                   |-----------------------|
+                                   |   init                |
+                                   |                       |
+                                   '-----------------------'
+                                   

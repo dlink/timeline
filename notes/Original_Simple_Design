@@ -1,0 +1,27 @@
+This is the original set of Objects:
+
+Event
+Entity
+Action
+Term
+Timeline
+Data
+Talkabout
+
+/archive/Timeline0/2006-02-08$ ls
+2005-07-03                      Talkabout2.output
+Action.pm                       Talkabout_GreatPeople.output
+Action.pm.sav                   Talkabout~
+Data.output                     Term.pm
+Data.pm                         Term.pm.sav
+Data2.output                    Tester
+Data2.pm                        Tester.output
+Data4.output                    Tester.sav
+Data4.pm                        Tester2
+Data_GreatPeople.output         Timeline
+Data_GreatPeople.pm             Timeline.sav
+Entity.pm                       color.data
+Event.pm                        family.data
+Math.pm                         notes
+Talkabout                       output
+Talkabout.output

@@ -1,0 +1,11 @@
+echo
+echo Searching $t ...
+grep $* $t/*
+grep $* $t/apache/*
+grep $* $tb/*
+grep $* $td/*
+grep $* $tl/*.pm
+grep $* $tn/*
+grep $* $tw/*.cgi 
+grep $* $twc/*.css
+grep $* $twj/*.js
